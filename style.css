@@ -1,9 +1,9 @@
 :root {
     --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-secondary: #2f2c2f;
     --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button: #9b2bfe;
+    --color-button-hover: #b522a4;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -16,11 +16,13 @@
 }
 
 body {
-    height: 100vh;
-    background-color: var(--color-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url('assets/fondo2.jpg'); /* Cambia la ruta por la de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
 }
 
 .main-content {
@@ -88,8 +90,9 @@ body {
 }
 
 .button-container {
-    width: 300px;
-    justify-content: center;
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el botón */
+    gap: 10px; /* Espacio entre la imagen y el botón */
 }
 
 /* Estilos de entrada de texto */
@@ -159,4 +162,22 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.conejos-decoracion {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Espacio entre las imágenes */
+    margin-bottom: 20px; /* Espacio debajo de las imágenes */
+}
+
+.conejo {
+    width: 150px; /* Tamaño de las imágenes */
+    height: auto; /* Mantener la proporción */
+}
+/* Estilos para la imagen del conejo */
+
+.conejo-icono {
+    width: 80px; /* Tamaño de la imagen */
+    height: auto; /* Mantener la proporción */
 }
